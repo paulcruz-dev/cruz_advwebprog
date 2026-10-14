@@ -63,6 +63,13 @@ Start the development server:
 npm run dev
 ```
 
+Populate the product database from the server app:
+
+```bash
+cd cruz-server
+npm run seed:products
+```
+
 Create a production build:
 
 ```bash
@@ -124,7 +131,7 @@ git push
 
 ## Key Files
 
-- `src/assets/product-content.js` - product data used by the catalog and product pages
+- `src/api/products.js` - product API requests and display formatting
 - `src/components/ProductCard.jsx` - reusable product card component
 - `src/components/ProductList.jsx` - product grid component
 - `src/pages/LandingPages/ProductListPage.jsx` - product catalog page
